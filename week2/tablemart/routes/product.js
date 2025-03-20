@@ -14,6 +14,18 @@ router.get('/', async function(req,res){
         //     {name: 'Bed', price: 200, quantity: 5}
         // ]
         products= await Product.find({});
+        //request information from API
+        // ax=require('axios');
+        // ax.get('http://localhost:4000/products')
+        // .then(function(response){
+        //     ctx={
+        //         title: 'Tablemart',
+        //         products: response.data.products,
+        //         user: req.session.user
+        //     } 
+        //    // console.log(req.session.user);
+        //     res.render('product/home',ctx);
+        // });
 
         ctx={
             title: 'Tablemart',
